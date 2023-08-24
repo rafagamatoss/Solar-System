@@ -1,0 +1,48 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Sora', sans-serif;
+    
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2021/04/Galaxia-scaled.jpg');
+    color: white;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+main h1{
+    font-size: 3rem;
+    margin: 5rem;
+}
+
+
+main .card-planets{
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main .card-planets .card{    
+    background-color: antiquewhite;
+    margin: 1rem;
+    padding: 3rem;
+    border-radius: .5rem;
+}
+
+main .card-planets .card a{    
+   text-decoration: none;
+}
