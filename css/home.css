@@ -1,48 +1,158 @@
 *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'Sora', sans-serif;
-    
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
+    height: 100vh;
+    width: 100%;
+}
+
+/*Estilização do Header*/
+header nav{
+    height: 5rem;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #73ff00;
+}
+
+header nav img{
+    height: 3.5rem;
+    margin-right: 2rem;
+}
+
+/*Estilização do Banner*/
+
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url('/img/SSE_Cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;   
+    padding-left: 5rem;
+    
+}
+
+.banner p, h1{
+    color: white;
+}
+
+.banner h1{
+    font-size: 5rem;
+    margin-top: 2rem;
+}
+
+.banner p{
+    width: 30%;
+}
+
+/*Estilização do setor Planets*/
+
+.planets{
+    background-color: #ffffff;
+    height: 45vh;
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(80, 80, 80);
+}
+
+.planets h1{
+    margin: 3rem 0 3rem 0;
+    color: rgb(80, 80, 80);
+}
+
+.planets .planets-cards{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.planets-cards .planet-item{  
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
-    background-image: url('https://img.olhardigital.com.br/wp-content/uploads/2021/04/Galaxia-scaled.jpg');
-    color: white;
+    border-radius: 5rem;
+}
+.planet-item .planet-icon{
+    height: 7rem;
+    height: rem;
+}
+.planets-cards .planet-item p{
+    font-weight: bold;
 }
 
-main{
+/*Estilizando a descrição do Sol*/
+
+.sun{
+    height: 70vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    background-color: #ffffff;
+}
+
+.sun .sun-banner{
+    height: 15vh;
+    background-image: url('/img/sol.jpg');
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
     
 }
 
-main h1{
-    font-size: 3rem;
-    margin: 5rem;
+.sun-banner h1{
+    font-size: 5rem;
+    
 }
 
-
-main .card-planets{
+.sun-description{
+    width: 80%;
+    text-align: justify;
+    align-self: center;
+    margin-top: 5rem;
+    color: rgb(0, 0, 0);
+    font-family: 'Sora', sans-serif;
+    font-size: 1.3rem;
+}
+/*Estilizando a área da tabela*/
+.distance-table{
+    height: 40vh;
     display: flex;
-    width: 60%;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Sora', sans-serif;
+    margin-top: 2rem;
 }
 
-main .card-planets .card{    
-    background-color: antiquewhite;
-    margin: 1rem;
-    padding: 3rem;
-    border-radius: .5rem;
+.distance-table h2{
+    margin-bottom: 2rem;
 }
 
-main .card-planets .card a{    
-   text-decoration: none;
+/*Estilização do Footer*/
+
+footer{
+    height: 4rem;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #73ff00;
 }
